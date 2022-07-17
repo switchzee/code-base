@@ -13,5 +13,5 @@ read -p 'which branch do you want to upload?' uploadBranch
 read -p 'which comment do you want to commit?' uploadCommit
 echo 'uploading...'
 git add .
-git commit -m '"'$commit'"'
+git commit -m '"'$uploadCommit'"'
 git push $uploadRemotes master:$uploadBranch
